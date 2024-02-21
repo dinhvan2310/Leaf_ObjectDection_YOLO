@@ -10,6 +10,8 @@ HOME = os.getcwd()
 model = YOLO('./leafs-20240205T053521Z-001/leafs/weights/best.pt')
 
 folder_path = './archive/train'
+folder_path = './Leaf-OD-OVERALL-1/train/images'
+
 train_path = os.listdir(folder_path)
 train_path = [os.path.join(folder_path, i) for i in train_path]
 
